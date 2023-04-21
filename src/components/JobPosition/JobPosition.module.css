@@ -1,0 +1,87 @@
+.position {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+.positionInfo {
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    padding-top: 0.75rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--grey-800);
+}
+
+.avatar {
+    top: -50px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+.positionBody {
+    display: flex;
+    flex-direction: column;
+}
+.positionBody .badge {
+    font-size: 10px;
+}
+
+.positionCompany {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.positionCompany h3 {
+    margin: 0;
+    font-style: var(--fs-normal);
+    color: var(--primary);
+    font-weight: var(--fw-bold);
+}
+.positionTitle {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+.positionTitle:hover {
+    color: var(--primary);
+}
+.positionMeta{
+    color: var(--grey-800);
+    position: relative;
+}
+.positionMeta:not(:last-child) {
+    padding-right: 0.5rem;
+}
+
+.positionMeta:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: -6px;
+    top: 6px;
+    width: 4px;
+    height: 4px;
+    background-color: var(--grey-800);
+    border-radius: var(--radii-full);
+}
+
+@media (min-width: 1024px) {
+    .position {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .positionInfo {
+        padding: 0;
+        margin-bottom: 0;
+        border-bottom: 0;
+    }
+
+    .avatar {
+        position: static;
+        flex-shrink: 0;
+        width: 100px;
+        height: 100px;
+    }
+}

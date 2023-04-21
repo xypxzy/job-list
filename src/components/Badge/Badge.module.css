@@ -1,0 +1,56 @@
+.badge {
+    display: flex;
+    align-items: center;
+    background-color: var(--grey-200);
+    color: var(--primary);
+    cursor: pointer;
+    border-radius: var(--radii);
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 1;
+    min-height: 26px;
+}
+.badge span {
+    padding: 0.25rem 0.5rem 0;
+}
+.badge:hover {
+    color: var(--grey-100);
+    background-color: var(--primary);
+}
+.light {
+    font-weight: var(--fw-bold);
+}
+.dark {
+    background-color: var(--grey-900);
+    color: var(--grey-100);
+}
+.primary {
+    background-color: var(--primary);
+    color: var(--grey-100);
+}
+.clearable {
+    cursor: default;
+}
+.clearable:hover {
+    background-color: var(--grey-200);
+    color: var(--primary);
+}
+
+.rounded {
+    border-radius: var(--radii-full);
+}
+
+
+.badgeRemove {
+    background-color: var(--primary);
+    color: var(--grey-100);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.5rem;
+    align-self: stretch;
+}
+.badgeRemove:hover {
+    background-color: var(--grey-900);
+}

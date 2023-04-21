@@ -1,0 +1,9 @@
+.card {
+    background-color: white;
+    border-radius: var(--radii);
+    box-shadow: var(--shadow);
+    border-left: 5px solid var(--grey-100);
+}
+.isFeatured {
+    border-left-color: var(--primary);
+}
