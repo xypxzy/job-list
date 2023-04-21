@@ -39,7 +39,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Live Site URL: [Add live site URL here](job-list-c3jgcqgq2-xypxzy.vercel.app)
+- Live Site URL: [Add live site URL here](https://job-list-c3jgcqgq2-xypxzy.vercel.app)
 
 ## My process
 
