@@ -1,9 +1,13 @@
-import './App.css'
-
+import {FilterPanel} from "./components/FilterPanel/FilterPanel.tsx";
 function App() {
 
   return (
-    <>D</>
+      <>
+          <header className='header' />
+          <div className='container'>
+              <FilterPanel/>
+          </div>
+      </>
   )
 }
 
