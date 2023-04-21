@@ -7,6 +7,7 @@ export function Badge({
   variant,
   colorScheme,
   children,
+  onClear,
   ...props
 }: BadgeProps): JSX.Element {
   return (
@@ -23,7 +24,7 @@ export function Badge({
     >
       <span>{children}</span>
       {variant === "clearable" && (
-        <div className={styles.badgeRemove}>
+        <div className={styles.badgeRemove} onClick={onClear}>
           <img src={removeIcon} alt="removeIcon" />
         </div>
       )}

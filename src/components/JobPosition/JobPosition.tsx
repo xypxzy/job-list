@@ -16,8 +16,10 @@ export function JobPosition({
   location,
   languages,
   tools,
+  handleAddFilter,
 }: JobPositionProps) {
   let badges: string[] = [];
+  // @ts-ignore
   badges = badges.concat(role, level, ...languages, ...tools);
   return (
     <Card isFeatured={featured}>
@@ -53,7 +55,11 @@ export function JobPosition({
         </div>
         <Stack>
           {badges.map((item) => (
-            <Badge variant={"rounded"} key={item}>
+            <Badge
+              variant={"rounded"}
+              onClick={() => handleAddFilter(item)}
+              key={item}
+            >
               {item}
             </Badge>
           ))}
