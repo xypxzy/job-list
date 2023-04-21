@@ -8,6 +8,7 @@ import data from "./mock/data.json";
 function App() {
   const dispatch = useDispatch();
   useEffect(() => {
+    // @ts-ignore
     dispatch(addPosition(data));
   }, []);
   return (

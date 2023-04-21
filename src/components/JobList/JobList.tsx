@@ -24,8 +24,8 @@ export function JobList() {
       {positions.map((item: JobPositionProps) => (
         <JobPosition
           key={item.id}
-          handleAddFilter={handleAddFilter}
           {...item}
+          handleAddFilter={handleAddFilter}
         />
       ))}
     </div>

@@ -3,7 +3,13 @@ import { DetailedHTMLProps, HTMLAttributes } from "react";
 // @ts-ignore
 export interface JobPositionProps
   extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>,
-    IBadges {
+    IBadges {}
+
+export interface IBadges {
+  languages: string[];
+  level: string;
+  role: string;
+  tools: string[];
   company: string;
   contract: string;
   featured: boolean;
@@ -14,11 +20,4 @@ export interface JobPositionProps
   postedAt: string;
   position: string;
   handleAddFilter: (s: string) => void;
-}
-
-export interface IBadges {
-  languages: string[];
-  level: string;
-  role: string;
-  tools: string[];
 }
